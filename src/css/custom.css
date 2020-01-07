@@ -22,3 +22,17 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+#tag-cloud-iframe{
+    width:800px;
+    height:600px;
+}
+
+
+@media screen and (max-width: 966px) { 
+   
+    #tag-cloud-iframe{
+      width:350px;
+      height:280px;
+    }
+}
