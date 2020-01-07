@@ -156,7 +156,7 @@ function Feature({ url, imageUrl, title, description }) {
         <div className={classnames('col col--4', styles.feature)}>
             {imgUrl && (
                 <div className="text--center">
-                    <img className={styles.featureImage} src={imgUrl} alt={title} />
+                    <Link to={useBaseUrl(url)}><img className={styles.featureImage} src={imgUrl} alt={title} /></Link>
                 </div>
             )}
             <Link to={useBaseUrl(url)}>
@@ -199,7 +199,7 @@ function Home() {
                                 styles.getStarted,
                             )}
                             to={"https://xviz.com/pricing/"}>
-                            SEE PLANS & PRICING
+                            See Plans & Pricing
                             </Link>
                     </div>
                 </div>
