@@ -14,8 +14,8 @@ module.exports = {
                 src: 'img/logo.svg',
             },
             links: [
-                { to: 'docs/doc1', label: 'Docs', position: 'left' }
-            ],
+               { to: "docs/general/Getting-Started", label: "Docs", position: "right" }
+            ]
         },
         footer: {
             style: 'dark',

@@ -6,8 +6,14 @@
  */
 
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-  },
+  sideBar: {
+     "Quick Start": [
+      "general/Getting-Started",
+      "general/Features",
+      "general/Copyright"
+    ],"Multiple Axes Chart": [
+      "multipleaxis/MultipleAxesChart"
+    ],"Horizon Chart": [
+      "horizon/HorizonChart"
+    ]  }
 };
