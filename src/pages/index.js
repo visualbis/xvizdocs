@@ -73,9 +73,24 @@ function Home() {
                             )}
                             to={useBaseUrl('docs/general/Getting-Started')}>
                             Get Started
-            </Link>
+                        </Link>
+                    </div>
+                    <br></br>
+                    <img src={useBaseUrl('img/community.png')} alt="xViz" />
+
+                    <p className="hero__subtitle">Explore our advanced custom visuals</p>
+                    <div className={styles.buttons}>
+                        <Link
+                            className={classnames(
+                                'button button--outline button--secondary button--lg',
+                                styles.getStarted,
+                            )}
+                            to={"https://xviz.com/pricing/"}>
+                            SEE PLANS & PRICING
+                            </Link>
                     </div>
                 </div>
+
             </header>
             <main>
                 {features && features.length && (
@@ -90,7 +105,8 @@ function Home() {
                     </section>
                 )}
             </main>
-        </Layout>
+
+        </Layout >
     );
 }
 
