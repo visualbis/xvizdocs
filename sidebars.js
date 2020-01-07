@@ -9,6 +9,7 @@ module.exports = {
             "visuals/HorizonChart",
             "visuals/MarimekkoChart",
             "visuals/VarianceChart",
+            "visuals/FunnelChart",
             "visuals/ParallelCoordinates"
         ], "Special Visuals": [
             "special/BulletChart",

@@ -7,133 +7,150 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 
-
-
-
 const features = [
     {
         title: <>Advanced Gauge</>,
         imageUrl: 'img/icons/advanced-gauge-chart-icon.png',
+        url: '/docs/gauges/AdvancedGauge',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                Compare and visualize the actual value against a target value.
+      </>
+        ),
+    }, {
+        title: <>Gantt</>,
+        imageUrl: 'img/icons/gantt-chart-icon.png',
+        url: '/docs/special/GanttChart',
+        description: (
+            <>
+                A handy Project Management tool within Power BI with advanced customization features
       </>
         ),
     },
     {
         title: <>Bullet Chart</>,
         imageUrl: 'img/icons/bullet-chart-icon.png',
+        url: '/docs/special/BulletChart',
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+                Bullet chart is a variation of a bar chart that was developed as a replacement for gauges and meters.
       </>
         ),
     },
     {
         title: <>Funnel Chart</>,
         imageUrl: 'img/icons/funnel-chart-icon.png',
+        url: '/docs/visuals/FunnelChart',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                A two-in-one visual which serves as both Funnel & Pyramid chart.
+                It functions in two different modes viz., the default mode and the 3D mode.
+      </>
+        ),
+    },
+    {
+        title: <>Hierarchical Filter</>,
+        imageUrl: 'img/icons/hierarchical-filter-chart-icon.png',
+        url: '/docs/filters/HierarchicalFilter',
+        description: (
+            <>
+                The Hierarchical Filter for Power BI is a selector component like a slicer, just that it can display multiple category values in an expandable tree view used to displayed hierarchical nodes for filtering.
       </>
         ),
     },
     {
         title: <>Hierarchical Tree</>,
-        imageUrl: 'img/icons/hierarchical-filter-chart-icon.png',
+        imageUrl: 'img/icons/hierarchical-tree-chart-icon.png',
+        url: '/docs/utils/HierarchyTree',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                The Hierarchical Tree is an advanced custom visual of the xViz suite built for Power BI to showcase hierarchies in a more visually appealing manner.
       </>
         ),
     },
     {
         title: <>Hierarchical Variance Table</>,
         imageUrl: 'img/icons/hierarchical-variance-table-chart-icon.png',
+        url: '/docs/tables/HierarchyVarianceTable',
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+                The xViz Hierarchical Variance table provides user the ability to view and analyze hierarchical data with much more detailing added to it.
       </>
         ),
     },
     {
         title: <>Horizon Chart</>,
         imageUrl: 'img/icons/horizon-chart-icon.png',
+        url: '/docs/visuals/HorizonChart',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                Analyze time-series outliers and predominant patterns with color bands that diverge.
       </>
         ),
     },
     {
         title: <>Linear Gauge</>,
         imageUrl: 'img/icons/linear-gauge-chart-icon.png',
+        url: '/docs/gauges/LinearGauge',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                Compare progress of desired value against target value.
       </>
         ),
     },
     {
         title: <>Marimekko Chart</>,
         imageUrl: 'img/icons/marimekko-chart-icon.png',
+        url: '/docs/visuals/MarimekkoChart',
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+                Visualize categorical data over two percentage scale variables.
       </>
         ),
     },
     {
         title: <>Multi Axes Chart</>,
         imageUrl: 'img/icons/multi-axes-chart-icon.png',
+        url: '/docs/visuals/MultipleAxesChart',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                Display up to five separate axis values each with their own series type spanning column, line, spline and area.
       </>
         ),
     },
     {
         title: <>Parallel Coordinates</>,
         imageUrl: 'img/icons/parallel-coordinated-icon.png',
+        url: '/docs/visuals/ParallelCoordinates',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                Parallel coordinates visualization is used to plot multivariate numerical data.
       </>
         ),
     },
     {
         title: <>Tag Cloud</>,
         imageUrl: 'img/icons/tag-cloud-icon.png',
+        url: '/docs/utils/TagCloud',
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+                A tag cloud is a visual representation of words that come along with your data.
       </>
         ),
     },
     {
         title: <>Variance Chart</>,
         imageUrl: 'img/icons/variance-chart-icon.png',
+        url: '/docs/visuals/VarianceChart',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                Analyze comparisons of two values across three distinct visualizations (comparison chart, variance chart and variance percentage) integrated into one visual control.
       </>
         ),
     }
 ];
 
-function Feature({ imageUrl, title, description }) {
+function Feature({ url, imageUrl, title, description }) {
     const imgUrl = useBaseUrl(imageUrl);
     return (
         <div className={classnames('col col--4', styles.feature)}>
@@ -142,7 +159,9 @@ function Feature({ imageUrl, title, description }) {
                     <img className={styles.featureImage} src={imgUrl} alt={title} />
                 </div>
             )}
-            <h3>{title}</h3>
+            <Link to={useBaseUrl(url)}>
+                <h3>{title}</h3>
+            </Link>
             <p>{description}</p>
         </div>
     );
