@@ -189,7 +189,7 @@ function Home() {
                         </Link>
                     </div>
                     <br></br>
-                    <img src={useBaseUrl('img/community.png')} alt="xViz" />
+                    <Link to={"https://community.xviz.com/"}><img src={useBaseUrl('img/community.png')} alt="xViz" /></Link>
 
                     <p className="hero__subtitle">Explore our advanced custom visuals</p>
                     <div className={styles.buttons}>
