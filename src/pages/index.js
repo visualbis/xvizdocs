@@ -6,10 +6,14 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+
+
+
+
 const features = [
     {
-        title: <>Easy to Use</>,
-        imageUrl: 'img/undraw_docusaurus_mountain.svg',
+        title: <>Advanced Gauge</>,
+        imageUrl: 'img/icons/advanced-gauge-chart-icon.png',
         description: (
             <>
                 Docusaurus was designed from the ground up to be easily installed and
@@ -18,8 +22,8 @@ const features = [
         ),
     },
     {
-        title: <>Focus on What Matters</>,
-        imageUrl: 'img/undraw_docusaurus_tree.svg',
+        title: <>Bullet Chart</>,
+        imageUrl: 'img/icons/bullet-chart-icon.png',
         description: (
             <>
                 Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -28,8 +32,8 @@ const features = [
         ),
     },
     {
-        title: <>Powered by React</>,
-        imageUrl: 'img/undraw_docusaurus_react.svg',
+        title: <>Funnel Chart</>,
+        imageUrl: 'img/icons/funnel-chart-icon.png',
         description: (
             <>
                 Extend or customize your website layout by reusing React. Docusaurus can
@@ -37,6 +41,96 @@ const features = [
       </>
         ),
     },
+    {
+        title: <>Hierarchical Tree</>,
+        imageUrl: 'img/icons/hierarchical-filter-chart-icon.png',
+        description: (
+            <>
+                Docusaurus was designed from the ground up to be easily installed and
+                used to get your website up and running quickly.
+      </>
+        ),
+    },
+    {
+        title: <>Hierarchical Variance Table</>,
+        imageUrl: 'img/icons/hierarchical-variance-table-chart-icon.png',
+        description: (
+            <>
+                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+        ),
+    },
+    {
+        title: <>Horizon Chart</>,
+        imageUrl: 'img/icons/horizon-chart-icon.png',
+        description: (
+            <>
+                Extend or customize your website layout by reusing React. Docusaurus can
+                be extended while reusing the same header and footer.
+      </>
+        ),
+    },
+    {
+        title: <>Linear Gauge</>,
+        imageUrl: 'img/icons/linear-gauge-chart-icon.png',
+        description: (
+            <>
+                Docusaurus was designed from the ground up to be easily installed and
+                used to get your website up and running quickly.
+      </>
+        ),
+    },
+    {
+        title: <>Marimekko Chart</>,
+        imageUrl: 'img/icons/marimekko-chart-icon.png',
+        description: (
+            <>
+                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+        ),
+    },
+    {
+        title: <>Multi Axes Chart</>,
+        imageUrl: 'img/icons/multi-axes-chart-icon.png',
+        description: (
+            <>
+                Extend or customize your website layout by reusing React. Docusaurus can
+                be extended while reusing the same header and footer.
+      </>
+        ),
+    },
+    {
+        title: <>Parallel Coordinates</>,
+        imageUrl: 'img/icons/parallel-coordinated-icon.png',
+        description: (
+            <>
+                Docusaurus was designed from the ground up to be easily installed and
+                used to get your website up and running quickly.
+      </>
+        ),
+    },
+    {
+        title: <>Tag Cloud</>,
+        imageUrl: 'img/icons/tag-cloud-icon.png',
+        description: (
+            <>
+                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+        ),
+    },
+    {
+        title: <>Variance Chart</>,
+        imageUrl: 'img/icons/variance-chart-icon.png',
+        description: (
+            <>
+                Extend or customize your website layout by reusing React. Docusaurus can
+                be extended while reusing the same header and footer.
+      </>
+        ),
+    }
 ];
 
 function Feature({ imageUrl, title, description }) {
