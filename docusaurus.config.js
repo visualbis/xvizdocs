@@ -14,7 +14,7 @@ module.exports = {
                 src: 'img/logo.svg',
             },
             links: [
-               { to: "docs/general/Getting-Started", label: "Docs", position: "right" }
+                { to: "docs/general/Getting-Started", label: "Docs", position: "right" }
             ]
         },
         footer: {
@@ -26,11 +26,11 @@ module.exports = {
 
                         {
                             label: 'Videos',
-                            href: 'https://xviz.com/videos/',
+                            to: 'https://xviz.com/videos/',
                         },
                         {
                             label: 'Webinars',
-                            href: 'https://xviz.com/webinars/',
+                            to: 'https://xviz.com/webinars/',
                         },
                     ],
                 },
@@ -39,7 +39,7 @@ module.exports = {
                     items: [
                         {
                             label: 'Developers',
-                            href: 'https://community.xviz.com/',
+                            to: 'https://community.xviz.com/',
                         },
                         {
                             label: 'LinkedIn',
@@ -51,8 +51,8 @@ module.exports = {
                     title: 'Social',
                     items: [
                         {
-                            label: 'Blog',
-                            href: 'https://xviz.com/blogs/',
+                            label: 'Blogs',
+                            to: 'https://xviz.com/blogs/',
                         },
                         {
                             label: 'Twitter',
