@@ -2,7 +2,7 @@ module.exports = {
     title: 'xViz',
     tagline: 'Advanced Custom Visuals for Power BI',
     url: 'https://xviz.com',
-    baseUrl: '/xvizdocs/',
+    baseUrl: '/',
     favicon: "img/xviz.png",
     organizationName: 'visualbis', // Usually your GitHub org/user name.
     projectName: 'xvizdocs', // Usually your repo name.
