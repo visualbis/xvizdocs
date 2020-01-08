@@ -121,7 +121,7 @@ const features = [
     {
         title: <>Parallel Coordinates</>,
         imageUrl: 'img/icons/parallel-coordinated-icon.png',
-        url: '/docs/visuals/ParallelCoordinates',
+        url: '/docs/utils/ParallelCoordinates',
         description: (
             <>
                 Parallel coordinates visualization is used to plot multivariate numerical data.

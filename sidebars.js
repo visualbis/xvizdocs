@@ -9,8 +9,7 @@ module.exports = {
             "visuals/HorizonChart",
             "visuals/MarimekkoChart",
             "visuals/VarianceChart",
-            "visuals/FunnelChart",
-            "visuals/ParallelCoordinates"
+            "visuals/FunnelChart"
         ], "Special Visuals": [
             "special/BulletChart",
             "special/GanttChart"
@@ -18,8 +17,9 @@ module.exports = {
             "gauges/LinearGauge",
             "gauges/AdvancedGauge"
         ], "Utilities": [
+            "utils/TagCloud",
             "utils/HierarchyTree",
-            "utils/TagCloud"
+            "utils/ParallelCoordinates"
         ], "Filters": [
             "filters/HierarchicalFilter"
         ], "Tables": [
