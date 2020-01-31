@@ -12,7 +12,7 @@
     "dependencies": {
         "@docusaurus/core": "2.0.0-alpha.40",
         "@docusaurus/preset-classic": "2.0.0-alpha.40",
-        "autocomplete.js": "0.37.0",
+        "autocomplete.js": "0.37.1",
         "classnames": "2.2.6",
         "hogan": "1.0.2",
         "lunr": "2.3.8",
