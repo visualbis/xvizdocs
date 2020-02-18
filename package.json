@@ -10,7 +10,7 @@
         "build:search": "node build-search-data.js"
     },
     "dependencies": {
-        "@docusaurus/core": "2.0.0-alpha.41",
+        "@docusaurus/core": "2.0.0-alpha.43",
         "@docusaurus/preset-classic": "2.0.0-alpha.40",
         "autocomplete.js": "0.37.1",
         "classnames": "2.2.6",
