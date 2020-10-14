@@ -16,8 +16,8 @@
         "classnames": "2.2.6",
         "hogan": "1.0.2",
         "lunr": "2.3.9",
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
+        "react": "16.14.0",
+        "react-dom": "16.14.0"
     },
     "browserslist": {
         "production": [
