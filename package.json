@@ -10,8 +10,8 @@
         "build:search": "node build-search-data.js"
     },
     "dependencies": { 
-        "@docusaurus/core": "2.0.0-alpha.65",
-        "@docusaurus/preset-classic": "2.0.0-alpha.65", 
+        "@docusaurus/core": "2.4.3",
+        "@docusaurus/preset-classic": "2.4.3", 
         "autocomplete.js": "0.38.0",
         "classnames": "2.2.6",
         "hogan": "1.0.2",
