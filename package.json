@@ -33,6 +33,6 @@
     },
     "devDependencies": {
         "cheerio": "1.0.0-rc.3",
-        "fs-extra": "9.0.1"
+        "fs-extra": "11.2.0"
     }
 }
